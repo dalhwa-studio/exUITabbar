@@ -8,22 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		0BA062CA255A82AF0037DBF2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA062C9255A82AF0037DBF2 /* AppDelegate.swift */; };
-		0BA062CC255A82AF0037DBF2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA062CB255A82AF0037DBF2 /* SceneDelegate.swift */; };
 		0BA062CE255A82AF0037DBF2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA062CD255A82AF0037DBF2 /* ViewController.swift */; };
 		0BA062D1255A82AF0037DBF2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BA062CF255A82AF0037DBF2 /* Main.storyboard */; };
 		0BA062D3255A82B00037DBF2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0BA062D2255A82B00037DBF2 /* Assets.xcassets */; };
 		0BA062D6255A82B00037DBF2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BA062D4255A82B00037DBF2 /* LaunchScreen.storyboard */; };
+		0BA062E1255A8E850037DBF2 /* UIViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA062E0255A8E850037DBF2 /* UIViewExt.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0BA062C6255A82AF0037DBF2 /* exUITabbar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = exUITabbar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BA062C9255A82AF0037DBF2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0BA062CB255A82AF0037DBF2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		0BA062CD255A82AF0037DBF2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0BA062D0255A82AF0037DBF2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0BA062D2255A82B00037DBF2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0BA062D5255A82B00037DBF2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0BA062D7255A82B00037DBF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0BA062E0255A8E850037DBF2 /* UIViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExt.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,8 +57,8 @@
 			isa = PBXGroup;
 			children = (
 				0BA062C9255A82AF0037DBF2 /* AppDelegate.swift */,
-				0BA062CB255A82AF0037DBF2 /* SceneDelegate.swift */,
 				0BA062CD255A82AF0037DBF2 /* ViewController.swift */,
+				0BA062E0255A8E850037DBF2 /* UIViewExt.swift */,
 				0BA062CF255A82AF0037DBF2 /* Main.storyboard */,
 				0BA062D2255A82B00037DBF2 /* Assets.xcassets */,
 				0BA062D4255A82B00037DBF2 /* LaunchScreen.storyboard */,
@@ -137,9 +137,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0BA062E1255A8E850037DBF2 /* UIViewExt.swift in Sources */,
 				0BA062CE255A82AF0037DBF2 /* ViewController.swift in Sources */,
 				0BA062CA255A82AF0037DBF2 /* AppDelegate.swift in Sources */,
-				0BA062CC255A82AF0037DBF2 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,10 +292,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.dalhwa.exUITabbar.exUITabbar;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dalhwa.exUITabbar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -310,10 +310,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.dalhwa.exUITabbar.exUITabbar;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dalhwa.exUITabbar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
